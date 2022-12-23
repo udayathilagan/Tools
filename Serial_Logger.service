@@ -1,0 +1,12 @@
+[Unit]
+Description=To Log serial data and sent data on Mqtt
+
+[Service]
+WorkingDirectory=/home/ut/Logger_U/
+Environment="TERM=xterm"
+ExecStart=/home/ut/Logger_U/logger_u
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+
